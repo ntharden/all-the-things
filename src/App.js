@@ -5,6 +5,7 @@ import ManliestThings from './pages/ManliestThings/ManliestThings'
 import FunctionalThings from './pages/FunctionalThings/FunctionalThings'
 import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SIllyThings'
+import PoptartThings from './pages/PoptartThings/PoptartThings'
 import Landing from './pages/Landing/Landing'
 import MusicThings from './pages/MusicThings/MusicThings'
 
@@ -134,7 +135,14 @@ const App = () => {
     {
       name: "music",
       image: "https://imgs.xkcd.com/comics/music.png",  
-      attributes: ["expressive", "fun", "soulful", "beautiful"],
+      attributes: ["expressive", "fun", "soulful", "beautiful"]
+    }
+  ])
+  const [briansThings, setBriansThings] = useState([
+    {
+      name: "pop tarts",
+      image: "https://imgs.xkcd.com/comics/functional.png",  
+      attributes: ["tasty", "colorful"],
     },
   ])
 
@@ -161,6 +169,11 @@ const App = () => {
       <Route
         path="/the-music-things"
         element={<MusicThings things={mauriciosThings} />}
+        
+      />
+      <Route
+      path="/the-poptart-things"
+      element={<PoptartThings things={briansThings} />}
       />
     </Routes>
   )
