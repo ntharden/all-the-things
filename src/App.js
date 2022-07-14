@@ -7,7 +7,10 @@ import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SIllyThings'
 import PoptartThings from './pages/PoptartThings/PoptartThings'
 import Landing from './pages/Landing/Landing'
+<<<<<<< HEAD
 import MusicThings from './pages/MusicThings/MusicThings'
+=======
+>>>>>>> e7c6b6c0d30bcb42f661c9ad9865621273082b2a
 import PotatoThings from './pages/PotatoThings/PotatoThings'
 
 const App = () => {
